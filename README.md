@@ -22,6 +22,23 @@ mvn-whiten <groupId>:<artifactId>:<version> [<groupId>:<artifactId>:<version> ..
 
 and there will be a new `tar` file.
 
+For more options:
+
+```
+ -d,--dependency-dir <Directory>    download dependencies to this folder
+                                    (default:local-repo)
+ -f,--dependency-file <JSON-File>   use this JSON dependency file
+                                    (default:dependencies.json)
+ -h,--help                          print this usage and exit
+ -j,--with-javadoc                  download javadoc attachment of
+                                    artifact
+ -p,--without-provided              don't download provided dependencies
+                                    of artifact
+ -s,--with-sources                  download source attachment of artifact
+ -t,--without-tests                 don't download test dependencies of
+                                    artifact
+```
+
 that's it.
 
 **If an exception is thrown complaining about missing dependencies, you might need to add extra repositores to your directory, see `extra-repos.json` for example.**
